@@ -1,0 +1,30 @@
+package com.tcs.prep;
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class fourinterest {
+
+	class Codechef {
+		public static void main(String[] args) throws java.lang.Exception {
+			Scanner sc = new Scanner(System.in);
+			int T = sc.nextInt();
+			while (T > 0) {
+				int N = sc.nextInt();
+				int count = 0;
+				while (N > 0) {
+					int digit = N % 10;
+					if (digit == 4) {
+						count++;
+					}
+					N = N / 10;
+
+				}
+				T--;
+				System.out.println(count);
+			}
+		}
+	}
+
+}
